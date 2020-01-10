@@ -38,4 +38,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+// hoge get request
+app.get('/hoge', (req, res) => {
+  res.send('hello!')
+});
+
 module.exports = app;
